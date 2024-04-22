@@ -6,6 +6,7 @@
 دو خط پایینی کامنت شده و از سه دیتاست و ماسک آنها که در دو خط بالا وجود دارند استفاده می شود.  
 
 البته ممکن است نام این فایل ها بر اساس آ\دیت کد تغییر کند.
+
 img_folders = ['abyek_images', 'imgs_deliniation', 'original_bound_detection']
 
 mask_folders = ['abyek_masks', 'masks_deliniation', 'img_bound_detection']
