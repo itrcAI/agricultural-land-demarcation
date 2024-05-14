@@ -7,7 +7,7 @@
 
 البته ممکن است نام این فایل ها بر اساس آپدیت کد تغییر کند.
 
-*** باقی مدل ها نیز به این قسمت اضافه شدند
+
 
 
 img_folders = ['abyek_images', 'imgs_deliniation', 'original_bound_detection']
@@ -18,3 +18,4 @@ mask_folders = ['abyek_masks', 'masks_deliniation', 'img_bound_detection']
 
 ! # mask_folders = ['abyek_masks', 'img_bound_detection']
 
+*** باقی مدل ها نیز به این قسمت اضافه شدند
