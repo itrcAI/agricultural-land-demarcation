@@ -1,17 +1,44 @@
-# Alizadeh
+# Agricultural Field Boundary Detection with Deep Learning and Hybrid Models
 
-### توضیح هر کدام از کدها:
- -- در ابتدا کد crop_image اجرا میشود تا تمامی تصاویر (تایل ها) برش داده شده و به ابعاد مورد نظر تقسیم بندی شوند.
- 
- -- سپس کد augment_data اجرا میشود تا داده های برش خورده با روش های مختلف آگمنت شده تا حجم داده ها نیز بیشتر شود.
- 
- -- تمامی مدل های دیپ و مدل های ترکیبی در فایل models_script قرار داده شده اند.
+This repository provides a complete pipeline for agricultural field boundary detection using deep learning and hybrid models. 
+The code covers all stages of the pipeline, including image cropping, data augmentation, model training, and post-processing. 
+The goal is to detect agricultural field boundaries from satellite or aerial imagery, leveraging deep learning and hybrid models to improve prediction accuracy.
 
- -- کد main نیز جهت اجرا و آموزش داده ها است.
+## Requirements
 
- کد post_process_predict نیز برای انجام کارهای پس پردازش ایجاد شده است.
+To run the scripts, you'll need the following Python libraries:
 
+- tensorflow==2.12
+- numpy
+- pandas
+- matplotlib
+- seaborn
+- scikit-learn
+- scikit-image
+- opencv-python
 
+You can install the necessary dependencies using `pip`:
 
+```bash
+pip install -r requirements.txt
+```
 
+## Code Overview
 
+### 1. `crop_image.py`
+The `crop_image.py` script is used to crop large images into smaller tiles, making them easier to process for model training. It takes raw images as input and outputs smaller, uniformly sized image tiles.
+
+### 2. `augment_data.py`
+Once the images are cropped, the `augment_data.py` script applies various augmentation techniques such as rotations, flips, and scaling to the cropped images. This increases the diversity of the dataset, which helps the model generalize better during training.
+
+### 3. `models_script.py`
+The `models_script.py` file defines the deep learning and hybrid models used for detecting agricultural field boundaries. This file contains the network architectures, loss functions, optimizers, and training routines.
+
+### 4. `main.py`
+The `main.py` script integrates all the steps of the pipeline. It coordinates the image cropping, data augmentation, and model training. You can customize the hyperparameters such as batch size, learning rate, and number of epochs when training the models.
+
+### 5. `prepare_masks_for_post_process_predict.py`
+After obtaining predictions from the model, the `prepare_masks_for_post_process_predict.py` script prepares the necessary masks for post-processing. This might include generating binary masks or applying other transformations to format the model outputs for further processing.
+
+### 6. `post_process_predict.py`
+The `post_process_predict.py` script performs post-processing on the model’s predictions. This can include tasks such as thresholding, smoothing, or applying morphological transformations to refine and finalize the predicted agricultural field boundaries.
