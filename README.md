@@ -43,7 +43,9 @@ After obtaining predictions from the model, the `prepare_masks_for_post_process_
 ### 6. `post_process_predict.py`
 The `post_process_predict.py` script performs post-processing on the model’s predictions. This can include tasks such as thresholding, smoothing, or applying morphological transformations to refine and finalize the predicted agricultural field boundaries.
 
-## Code Order
+## Code execution Order
 First run `crop_image.py` then `augment_data.py` to augment croped images.
+
 Then run `main.py` to train the model.
+
 After saved model prepared, run `prepare_masks_for_post_process_predict.py` based on saved model name (change inside the code) then run `post_process_predict.py`  
