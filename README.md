@@ -32,10 +32,10 @@ The `crop_image.py` script is used to crop large images into smaller tiles, maki
 Once the images are cropped, the `augment_data.py` script applies various augmentation techniques such as rotations, flips, and scaling to the cropped images. This increases the diversity of the dataset, which helps the model generalize better during training.
 
 ### 3. `models_script.py`
-The `models_script.py` file defines the deep learning and hybrid models used for detecting agricultural field boundaries. This file contains the network architectures, loss functions, optimizers, and training routines.
+The `models_script.py` file defines the deep learning and hybrid models used for detecting agricultural field boundaries. This file contains the network architectures.
 
 ### 4. `main.py`
-The `main.py` script integrates all the steps of the pipeline. It coordinates the image cropping, data augmentation, and model training. You can customize the hyperparameters such as batch size, learning rate, and number of epochs when training the models.
+The `main.py` script integrates all the steps of the pipeline. It coordinates the image cropping, data augmentation, and model training. You can customize the hyperparameters such as batch size, learning rate, and number of epochs when training the models. Also This file contains loss functions, optimizers, and training routines.
 
 ### 5. `prepare_masks_for_post_process_predict.py`
 After obtaining predictions from the model, the `prepare_masks_for_post_process_predict.py` script prepares the necessary masks for post-processing. This might include generating binary masks or applying other transformations to format the model outputs for further processing.
