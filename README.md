@@ -9,7 +9,6 @@ The goal is to detect agricultural field boundaries from satellite or aerial ima
 To run the scripts, you'll need the following Python libraries:
 
 - tensorflow==2.12
-- os
 - numpy
 - pandas
 - matplotlib
