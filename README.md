@@ -100,7 +100,7 @@ np.random.seed(seed)
 # Dataset configuration
 IMG_HEIGHT = 128
 IMG_WIDTH = 128
-BATCH_SIZE = 8
+BATCH_SIZE = 1
 EPOCHS = 50
 
 # Define model and dataset paths
