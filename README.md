@@ -77,6 +77,15 @@ The `post_process_predict.py` script performs post-processing on the model’s p
 
 ## Pipeline Steps in `main.py`
 
+### list of the models that can import to use from script_models.py:
+'UNet, DenseNets, ResUNet, DenseUnet, unet_densenet_resunet, unetplus_resunet_attentionunet, bpat_unet, unetpp_resunet, unetpp_res_transformer, transformer_segmentation_model'
+
+### you need to just write the model you want to use and run front of run_model 
+
+run_model = unetpp_res_transformer
+model_name = 'unetpp-res-transformer-tverfbeta-64-2-ir-ed'
+
+
 The following code block provides a summary of the key pipeline steps in `main.py`:
 
 ```python
