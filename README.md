@@ -140,11 +140,11 @@ val_dataset = create_tf_dataset(val_images_path, val_masks_path)
 test_dataset = create_tf_dataset(test_images_path, test_masks_path)
 
 # Build and compile the model
-model = build_model(input_shape=(IMG_HEIGHT, IMG_WIDTH, 3))
+model = run_model(input_shape=(IMG_HEIGHT, IMG_WIDTH, 3))
 
 # Define training callbacks
 callbacks = [
-    ModelCheckpoint(f'./models/model.h5', verbose=1, save_best_only=True)
+    ModelCheckpoint(f'./models/{model_name}.h5', verbose=1, save_best_only=True)
 ]
 
 # Train the model
