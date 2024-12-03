@@ -83,7 +83,7 @@ The `post_process_predict.py` script performs post-processing on the model’s p
 ### you need to just write the model you want to use and run front of run_model,
 ### you can write any name for your model in model_name 
 ```
-run_model = unetpp_res_transformer
+run_model = UNet
 model_name = 'unetpp-res-transformer-tverfbeta-64-2-ir-ed'
 ```
 
