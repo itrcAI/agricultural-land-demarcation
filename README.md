@@ -84,7 +84,7 @@ The `post_process_predict.py` script performs post-processing on the model’s p
 ### you can write any name for your model in model_name 
 ```
 run_model = UNet
-model_name = 'unetpp-res-transformer-tverfbeta-64-2-ir-ed'
+model_name = 'unet-tverfbeta-64-2-ir-ed'
 ```
 
 The following code block provides a summary of the key pipeline steps in `main.py`:
