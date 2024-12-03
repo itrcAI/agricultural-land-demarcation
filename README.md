@@ -81,10 +81,10 @@ The `post_process_predict.py` script performs post-processing on the model’s p
 'UNet, DenseNets, ResUNet, DenseUnet, unet_densenet_resunet, unetplus_resunet_attentionunet, bpat_unet, unetpp_resunet, unetpp_res_transformer, transformer_segmentation_model'
 
 ### you need to just write the model you want to use and run front of run_model 
-
+'''
 run_model = unetpp_res_transformer
 model_name = 'unetpp-res-transformer-tverfbeta-64-2-ir-ed'
-
+'''
 
 The following code block provides a summary of the key pipeline steps in `main.py`:
 
@@ -111,6 +111,9 @@ IMG_HEIGHT = 128
 IMG_WIDTH = 128
 BATCH_SIZE = 1
 EPOCHS = 50
+
+run_model = unetpp_res_transformer
+model_name = 'unetpp-res-transformer-tverfbeta-64-2-ir-ed'
 
 # Define model and dataset paths
 image_dir = "./All_images/"
