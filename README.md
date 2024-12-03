@@ -89,8 +89,8 @@ The `post_process_predict.py` script performs post-processing on the model’s p
 - unetpp_res_transformer
 - transformer_segmentation_model
 
-### you need to just write the model you want front of run_model to use and run
-### you can write any name for your model in model_name 
+### * you need to just write the model you want front of run_model to use and run
+### * you can write any name for your model in model_name 
 ```
 run_model = UNet
 model_name = 'model_name_to_save'
